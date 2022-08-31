@@ -1,16 +1,14 @@
-import Header from "../../components/header/Header";
-import LandingHero from "../../components/landinghero/LandingHero";
-import Skills from "../../components/skills/Skills";
-
-import Contact from "../../components/contact/Contact";
-import Footer from "../../components/footer/Footer";
-
 import { Container } from "react-bootstrap";
-import About from "../../components/about/About";
-
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-function Main() {
+import Header from "../../components/header/Header";
+import LandingHero from "../../components/main/landinghero/LandingHero";
+import About from "../../components/main/about/About";
+import Skills from "../../components/main/skills/Skills";
+import Contact from "../../components/main/contact/Contact";
+import Footer from "../../components/footer/Footer";
+
+const Main = () => {
 	return (
 		<Container fluid style={{ padding: "0", margin: "0" }}>
 			<Header />
@@ -39,6 +37,6 @@ function Main() {
 			<Footer />
 		</Container>
 	);
-}
+};
 
 export default Main;

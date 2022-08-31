@@ -1,18 +1,27 @@
 import { AiFillHtml5 } from "react-icons/ai";
-import { FaSass, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
-import { SiJavascript, SiMongodb, SiExpress } from "react-icons/si";
-import { DiJavascript, DiNodejs, DiJava } from "react-icons/di";
+import { FaSass, FaReact, FaPython } from "react-icons/fa";
+import {
+	SiJavascript,
+	SiMongodb,
+	SiExpress,
+	SiMaterialui,
+} from "react-icons/si";
+import { DiNodejs, DiJava } from "react-icons/di";
+import { BsFillBootstrapFill } from "react-icons/bs";
+import { GrPersonalComputer } from "react-icons/gr";
 
 export const skills = [
+	{ id: 4, name: "React", icon: FaReact, color: "B4D2E7" },
 	{ id: 1, name: "HTML", icon: AiFillHtml5, color: "A882DD" },
 	{ id: 2, name: "SCSS", icon: FaSass, color: "F08080" },
 	{ id: 3, name: "JavaScript", icon: SiJavascript, color: "93827F" },
-	{ id: 4, name: "React", icon: FaReact, color: "B4D2E7" },
+	{ id: 10, name: "Bootstrap", icon: BsFillBootstrapFill, color: "8a12fc" },
+	{ id: 10, name: "MaterialUI", icon: SiMaterialui, color: "016dd9" },
 	{ id: 5, name: "Node.js", icon: DiNodejs, color: "7D8CC4" },
 	{ id: 6, name: "Express", icon: SiExpress, color: "C3BEF7" },
 	{ id: 7, name: "Python", icon: FaPython, color: "FFC145" },
 	{ id: 8, name: "Java", icon: DiJava, color: "6D9DC5" },
-	{ id: 9, name: "C", icon: AiFillHtml5, color: "242038" },
+	{ id: 9, name: "C", icon: GrPersonalComputer, color: "242038" },
 	{ id: 10, name: "MongoDB", icon: SiMongodb, color: "A6D3A0" },
 ];
 
