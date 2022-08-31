@@ -1,5 +1,3 @@
-import "./about.css";
-
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 
@@ -9,9 +7,9 @@ const About = () => {
 			fluid
 			className="d-flex flex-column"
 			style={{
-				margin: "0",
+				margin: "0 0 250px 0",
 				padding: "0 150px 0 150px",
-				height: "750px",
+				height: "auto",
 				gap: "60px",
 			}}
 		>
@@ -35,6 +33,7 @@ const About = () => {
 			</Row>
 			<Row
 				style={{
+					minHeight: "300px",
 					height: "auto",
 					borderRadius: "50px",
 					padding: "50px",

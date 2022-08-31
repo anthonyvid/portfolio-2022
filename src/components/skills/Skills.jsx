@@ -2,19 +2,17 @@ import React, { useRef } from "react";
 import "./skills.css";
 import { skills } from "../../data/data";
 
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Skills() {
-	const skillsSection = useRef(null);
-
 	return (
 		<Container
 			fluid
 			className="d-flex flex-column"
 			style={{
-				margin: "0",
+				margin: "0 0 250px 0",
 				padding: "0 150px 0 150px",
-				height: "750px",
+				height: "auto",
 				gap: "60px",
 			}}
 		>
@@ -38,28 +36,51 @@ function Skills() {
 			</Row>
 			<Row
 				style={{
+					minHeight: "300px",
 					height: "auto",
+					width: "100%",
 					borderRadius: "50px",
 					padding: "50px",
 				}}
 				className="bg-white"
 			>
-				{skills.map((skill) => {
-					const { id, name, icon, color } = skill;
-					const Icon = icon;
+				<div class="container">
+					<div class="row row-cols-2 row-cols-lg-5 g-lg-3">
+						{skills.map((skill) => {
+							const { id, name, icon, color } = skill;
+							const Icon = icon;
 
-					return (
-						<div
-							className="skill"
-							key={id}
-							style={{ backgroundColor: `#${color}` }}
-							data-aos="zoom-in"
-						>
-							<Icon className="skill-logo" />
-							{name}
-						</div>
-					);
-				})}
+							return (
+								<Col
+									className="col-6 skill"
+									key={id}
+									style={{
+										backgroundColor: `#${color}`,
+										borderRadius: "25px",
+									}}
+								>
+									<div
+										style={{
+											height: "125px",
+											fontWeight: "600",
+											fontSize: "16px",
+											padding: "15px",
+										}}
+										className="d-flex flex-column justify-content-center align-items-center text-white text-center"
+									>
+										<Icon
+											style={{
+												width: "100%",
+												height: "50%",
+											}}
+										/>
+										{name}
+									</div>
+								</Col>
+							);
+						})}
+					</div>
+				</div>
 			</Row>
 		</Container>
 	);
