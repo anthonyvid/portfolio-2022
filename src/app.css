@@ -1,0 +1,66 @@
+* {
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	height: 100%;
+	background-color: #f7f7f7;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden !important;
+}
+
+svg:hover {
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-color: #6665dd;
+	color: white;
+}
+
+.btn-primary:hover {
+	background-color: #5b5ac6;
+	color: white;
+	transition: 0.3s ease-in-out;
+}
+
+.btn-primary:focus {
+	background-color: #6665dd;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	cursor: pointer;
+	color: white;
+}
+
+.color-p {
+	color: #6665dd;
+}
+
+.color-s {
+	color: #5b5ac6;
+}
+
+.bg-p {
+	background-color: #6665dd;
+}
+
+.bg-s {
+	background-color: #5b5ac6;
+}
+
+.bg-s-alt {
+	background-color: #5150b0;
+}
