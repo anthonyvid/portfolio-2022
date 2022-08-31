@@ -1,16 +1,9 @@
-import React, { useEffect } from "react";
 import "./footer.css";
+
+import React from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
-import { BsArrowUpShort } from "react-icons/bs";
 
 const Footer = () => {
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
-
 	return (
 		<div className="footer">
 			<div className="content-wrap">

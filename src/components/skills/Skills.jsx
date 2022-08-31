@@ -1,8 +1,9 @@
-import React from "react";
 import "./skills.css";
+
+import React from "react";
 import { skills } from "../../data/data";
 
-function Skills() {
+const Skills = () => {
 	return (
 		<section className="main-section skills-section">
 			<div className="section-header">
@@ -39,6 +40,6 @@ function Skills() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default Skills;

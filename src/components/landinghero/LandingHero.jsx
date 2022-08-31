@@ -1,8 +1,10 @@
 import "./LandingHero.css";
+
 import Pdf from "../../documents/resume.pdf";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { Button } from "react-bootstrap";
-function LandingHero() {
+
+const LandingHero = () => {
 	return (
 		<section className="master-content">
 			<div className="hero">
@@ -19,7 +21,7 @@ function LandingHero() {
 			</div>
 		</section>
 	);
-}
+};
 
 const Content = () => {
 	return (

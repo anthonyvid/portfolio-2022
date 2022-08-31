@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
 import "./projects.css";
-import { projects } from "../../data/data";
+
+import React, { useState, useRef } from "react";
 import { MdOutlineOpenInNew } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
-import "aos/dist/aos.css";
+
+import { projects } from "../../data/data";
 
 function Projects() {
-	const [imgBoxSize, setImgBoxSize] = useState({ width: 0, height: 0 });
 	const ref = useRef(null);
 
 	return (

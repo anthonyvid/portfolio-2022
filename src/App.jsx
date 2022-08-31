@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "animate.css/animate.min.css";
 
 import React, { Suspense } from "react";
 import { Spinner } from "react-bootstrap";

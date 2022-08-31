@@ -1,8 +1,8 @@
-import React, { useState, useRef } from "react";
 import "./contact.css";
+
+import React, { useState, useRef } from "react";
 import { Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-
 import { BsArrowRightShort } from "react-icons/bs";
 import { AiFillCheckCircle } from "react-icons/ai";
 
@@ -63,11 +63,11 @@ function Contact() {
 		<section className="main-section">
 			<div className="section-header">
 				<div className="d-flex flex-row align-items-center">
-					<small>Connect</small>
+					<small>Say Hi</small>
 					<hr
 						style={{
 							width: "auto",
-							width: "70px",
+							width: "90px",
 							marginLeft: "10px",
 							opacity: "1",
 							color: "#5f7080",

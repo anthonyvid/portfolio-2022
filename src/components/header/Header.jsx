@@ -1,24 +1,15 @@
 import "./header.css";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { FiExternalLink } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import { IoShareSocialSharp, IoGitNetworkSharp } from "react-icons/io5";
 import { IoMdBriefcase } from "react-icons/io";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { Container, Navbar, Nav, Row, Col } from "react-bootstrap";
 
-import {
-	Container,
-	Navbar,
-	Nav,
-	Row,
-	Col,
-	Button,
-	Modal,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const Styles = {
 	headerRight: {
