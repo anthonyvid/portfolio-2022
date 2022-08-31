@@ -21,6 +21,8 @@ function Main() {
 			<LandingHero />
 			<About />
 			<Skills />
+			<Contact />
+			<Footer />
 		</Container>
 		// <div className="page-container">
 		// 	<div className="lines-wrap">

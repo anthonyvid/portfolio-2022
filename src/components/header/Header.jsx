@@ -1,11 +1,7 @@
 import "./header.css";
 
 import React, { useState, useEffect } from "react";
-import {
-	AiFillLinkedin,
-	AiFillGithub,
-	AiOutlineCloseCircle,
-} from "react-icons/ai";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
@@ -87,7 +83,7 @@ function Header() {
 					</Link>
 					<Nav
 						style={Styles.headerRight}
-						className="d-none d-lg-flex"
+						className="d-none d-lg-flex desktop-nav"
 					>
 						<Row style={Styles.desktopNavbar}>
 							<Col>

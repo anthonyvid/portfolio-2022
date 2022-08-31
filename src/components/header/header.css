@@ -6,21 +6,15 @@
 		opacity: 1;
 	}
 }
-@keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+
+.desktop-nav a {
+	transition: 0.2s ease-out;
 }
 
-.logo {
-	transition: width 1s, height 1s, transform 0.5s;
-}
-
-.logo:hover {
-	transform: rotateY(-20deg) skew(-15deg, 5deg) scale(1.1);
+.desktop-nav .nav-item:hover {
+	transition: 0.3s ease-in-out;
+	transform: scale(1.1);
+	color: black;
 }
 
 .mobile-nav {

@@ -1,0 +1,13 @@
+.about-content {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 50px;
+}
+.about-content p {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.7;
+}/*# sourceMappingURL=about.css.map */

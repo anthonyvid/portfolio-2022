@@ -59,18 +59,18 @@
   justify-content: center;
 }
 .content .wrapper h1 {
-  font-size: 64px;
+  font-size: 50px;
+  letter-spacing: 2px;
   font-weight: 500;
   margin-top: -5px;
 }
 .content .wrapper h3 {
   font-size: 24px;
   font-weight: 400;
-  margin-left: 6px;
   color: #5f7080;
 }
 .content .wrapper strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .avatar {
