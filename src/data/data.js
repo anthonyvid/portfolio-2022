@@ -140,6 +140,30 @@ export const projects = [
 			"https://replit.com/@CIS2250/PROJECTL01-CIS2250-3#README.md",
 		],
 	},
+	{
+		id: 4,
+		title: "React Todo List",
+		description: "A simple todo list made with React!",
+		points: [],
+		stack: [["React", "5ed3f3"]],
+		photos: ["photos/reacttodolist/1.png"],
+		links: [
+			"https://github.com/anthonyvid/react-todolist",
+			"https://react-todolist-anthony.netlify.app/",
+		],
+	},
+	{
+		id: 5,
+		title: "React Colour Viewer",
+		description: "A simple app to view colours with React!",
+		points: ["Allows you to copy the hex code of any colour you type in"],
+		stack: [["React", "5ed3f3"]],
+		photos: ["photos/colourviewer/1.png"],
+		links: [
+			"https://github.com/anthonyvid/react-colour-viewer",
+			"https://react-colour-viewer.netlify.app/",
+		],
+	},
 ];
 
 export const jobs = [
