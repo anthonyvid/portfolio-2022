@@ -7,14 +7,8 @@
 	}
 }
 
-.desktop-nav a {
-	transition: 0.2s ease-out;
-}
-
 .desktop-nav .nav-item:hover {
-	transition: 0.3s ease-in-out;
-	transform: scale(1.1);
-	color: black;
+	border-bottom: 2px solid white;
 }
 
 .mobile-nav {

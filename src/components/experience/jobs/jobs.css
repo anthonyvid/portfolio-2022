@@ -1,0 +1,43 @@
+.jobs-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 50px;
+}
+.jobs-content .job {
+  transition: 0.3s ease-in-out;
+}
+.jobs-content .job h4 {
+  letter-spacing: 1px;
+}
+.jobs-content .job h4 a {
+  color: #333;
+}
+.jobs-content .job .date,
+.jobs-content .job .location,
+.jobs-content .job .position,
+.jobs-content .job .type,
+.jobs-content .job .tasks {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #5f7080;
+  text-transform: uppercase;
+}
+.jobs-content .job .position,
+.jobs-content .job .type {
+  font-size: 15px !important;
+}
+.jobs-content .job .position {
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 675px) {
+  .jobs-content {
+    padding: 50px 35px 50px 35px;
+  }
+}/*# sourceMappingURL=jobs.css.map */

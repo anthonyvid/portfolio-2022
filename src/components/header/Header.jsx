@@ -10,7 +10,6 @@ import { IoMdBriefcase } from "react-icons/io";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { Container, Navbar, Nav, Row, Col } from "react-bootstrap";
 
-
 const Styles = {
 	headerRight: {
 		gap: "50px",

@@ -103,16 +103,19 @@ a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-	.education-header div {
+	.education-header div,
+	.job-header div {
 		display: none !important;
 	}
 
-	.education-timeline-mobile {
+	.education-timeline-mobile,
+	.job-timeline-mobile {
 		display: flex !important;
 		justify-content: space-between;
 	}
 
-	.education-timeline-mobile .location {
+	.education-timeline-mobile .location,
+	.job-timeline-mobile .location {
 		margin-top: 0 !important;
 	}
 }
