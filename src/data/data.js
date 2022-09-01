@@ -57,7 +57,14 @@ export const projects = [
 		id: 1,
 		title: "TicketScout",
 		description:
-			"A Node.js web application powered by express to track and manage tickets, payments, and customers. Made for computer and phone technicians.",
+			"A Node.js web application powered by express to track and manage tickets, payments, and customers. Made for computer and phone technicians",
+		points: [
+			"Allows for fast SMS communication between a business and its client, implenented with Twilio SMS API",
+			"Built an internal real-time order tracking system for a variety of shipping couriers, implenented with Google API",
+			"Securely and effeciently stored business and client data using Bcrpyt and MongoDB",
+			"Implemented secure log-in, sign-up, and email verification using Passport.Js Authentication",
+			"Utilized Web Sockets to allow for fast, dynamic, and real-time updates for users",
+		],
 		stack: [
 			["HTML", "A882DD"],
 			["SCSS", "F08080"],
@@ -70,12 +77,12 @@ export const projects = [
 			["Twilio SMS API", "242038"],
 			["GoShippo Tracking API", "A6D3A0"],
 		],
-		img: [
-			{ url: "photos/ticketscout/1.jpeg" },
-			{ url: "photos/ticketscout/2.png" },
-			{ url: "photos/ticketscout/3.jpeg" },
-			{ url: "photos/ticketscout/4.png" },
-			{ url: "photos/ticketscout/5.jpeg" },
+		photos: [
+			"photos/ticketscout/1.jpeg",
+			"photos/ticketscout/2.png",
+			"photos/ticketscout/3.jpeg",
+			"photos/ticketscout/4.png",
+			"photos/ticketscout/5.jpeg",
 		],
 		links: [
 			"https://github.com/anthonyvid/TicketScout",
@@ -83,20 +90,50 @@ export const projects = [
 		],
 	},
 	{
+		id: 3,
+		title: "SVG Viewer & Editor",
+		description:
+			"An application built in 4th term that can create, edit, and manipulate SVG files",
+		points: [
+			"Upload and edit SVG files",
+			"Download your edited SVG files",
+			"Create new SVG files from scratch",
+			"View information about uploaded SVG files",
+		],
+		stack: [
+			["HTML", "A882DD"],
+			["CSS", "F08080"],
+			["JavaScript", "93827F"],
+			["NodeJs", "B4D2E7"],
+			["Express", "7D8CC4"],
+		],
+		photos: [
+			"photos/svgviewer/1.png",
+			"photos/svgviewer/2.png",
+			"photos/svgviewer/3.png",
+		],
+		links: ["", ""],
+	},
+	{
 		id: 2,
 		title: "COVID-19 Data Analyzer",
 		description:
-			"Given COVID-19 data, the program will process, analyze, and plot, based on user input from a graphical user interface",
+			"A team project for Software Design II (CIS*2250) class that shows and graphs COVID-19 data with a GUI",
+		points: [
+			"Developed software to accurately plot COVID-19 data based on specific requirements using Python",
+			"Created a user interface to visualize data using Tkinter framework and Matplot library, which increased useability and practicality",
+			"Followed agile development practices with weekly stand-ups and monthly sprints, which resulted in successful testing and time management",
+		],
 		stack: [
 			["Python", "FFC145"],
 			["Tkinter", "F08080"],
 			["Matplot", "93827F"],
 		],
-		img: [
-			{ url: "photos/coviddatatracker/1.png" },
-			{ url: "photos/coviddatatracker/2.png" },
-			{ url: "photos/coviddatatracker/3.png" },
-			{ url: "photos/coviddatatracker/4.png" },
+		photos: [
+			"photos/coviddatatracker/1.png",
+			"photos/coviddatatracker/2.png",
+			"photos/coviddatatracker/3.png",
+			"photos/coviddatatracker/4.png",
 		],
 		links: [
 			"https://github.com/anthonyvid/CovidDataTracker",

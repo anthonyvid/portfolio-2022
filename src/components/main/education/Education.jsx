@@ -23,54 +23,53 @@ const Education = () => {
 			</div>
 			<div className="education-content bg-white">
 				{educations.map((e) => {
-					return (
-						<>
-							<div
-								key={e.id}
-								className="education d-flex flex-column w-100"
-							>
-								<div className="d-flex justify-content-between align-items-center education-header">
-									<h4>{e.school}</h4>
-									<div>
-										<p className="date">{`${e.fromDate} - ${e.toDate}`}</p>
-										<p
-											className="location"
-											style={{
-												float: "right",
-												marginTop: "-17px",
-											}}
-										>
-											{e.location}
-										</p>
-									</div>
-								</div>
-								<div className="education-timeline-mobile d-none">
-									<p className="date">{`${e.fromDate} - ${e.toDate}`}</p>
-									<p
-										className="location"
-										style={{
-											float: "right",
-											marginTop: "-17px",
-										}}
-									>
-										{e.location}
-									</p>
-								</div>
-								{e.program && (
-									<p className="program">{e.program}</p>
-								)}
-							</div>
-							{!e.last && (
-								<div
-									className="d-flex align-items-center my-4 w-100"
-									style={{ borderTop: "1px solid lightgray" }}
-								></div>
-							)}
-						</>
-					);
+					return <School key={e.id} e={e} />;
 				})}
 			</div>
 		</section>
+	);
+};
+
+const School = ({ e }) => {
+	return (
+		<>
+			<div className="education d-flex flex-column w-100">
+				<div className="d-flex justify-content-between align-items-center education-header">
+					<h4>{e.school}</h4>
+					<div>
+						<p className="date">{`${e.fromDate} - ${e.toDate}`}</p>
+						<p
+							className="location"
+							style={{
+								float: "right",
+								marginTop: "-17px",
+							}}
+						>
+							{e.location}
+						</p>
+					</div>
+				</div>
+				<div className="education-timeline-mobile d-none">
+					<p className="date">{`${e.fromDate} - ${e.toDate}`}</p>
+					<p
+						className="location"
+						style={{
+							float: "right",
+							marginTop: "-17px",
+						}}
+					>
+						{e.location}
+					</p>
+				</div>
+				{e.program && <p className="program">{e.program}</p>}
+			</div>
+			{!e.last && (
+				<div
+					className="d-flex align-items-center my-4 w-100"
+					style={{ borderTop: "1px solid lightgray" }}
+				></div>
+			)}
+		</>
 	);
 };
 

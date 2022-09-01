@@ -48,7 +48,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .content .wrapper {
   height: 100%;
@@ -74,7 +74,7 @@
 .avatar {
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .avatar img {
