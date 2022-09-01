@@ -5,10 +5,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const Main = lazy(() => import("../pages/main/Main"));
 const Experience = lazy(() => import("../pages/experience/Experience"));
+const Projects = lazy(() => import("../pages/projects/Projects"));
 
 const siteRoutes = [
 	{ component: <Main />, path: "/" },
 	{ component: <Experience />, path: "/experience" },
+	{ component: <Projects />, path: "/projects" },
 ];
 
 const SiteRoutes = () => {
