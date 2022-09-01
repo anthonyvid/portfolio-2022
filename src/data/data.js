@@ -115,6 +115,12 @@ export const jobs = [
 		toDate: "Apr 2018",
 		location: "Halton Hills, ON",
 		website: "https://www.toppers.ca/",
+		tasks: [
+			"Made all sorts of pizza's from scratch!",
+			"Stocking shelves/freezer",
+			"General cleaning such as washing dishes",
+			"Front cashier",
+		],
 	},
 	{
 		id: 2,
@@ -125,6 +131,11 @@ export const jobs = [
 		location: "Halton Hills, ON",
 		type: "co-op",
 		wesite: "https://www.compu-master.ca/",
+		tasks: [
+			"Repaired and replaced primary components for a variety of different laptop brands",
+			"Performed hundreds of operating system installations for Windows, Mac, and Linux",
+			"Provided hardware and software support for over a dozen business clients",
+		],
 	},
 	{
 		id: 3,
@@ -135,6 +146,11 @@ export const jobs = [
 		location: "Milton, ON",
 		type: "part-time/full-time",
 		website: "https://compumobile.com/",
+		tasks: [
+			"Performed hundreds of phone and computer repairs on all brands and models",
+			"Provided hands-on training for three co-op students who are now all part-time employees",
+			"Demonstrated independent and collaborative problem-solving skills while under strict time constraints",
+		],
 	},
 	{
 		id: 4,
@@ -145,6 +161,11 @@ export const jobs = [
 		location: "Waterloo, ON",
 		type: "co-op",
 		website: "https://tamvoes.com/main/",
+		tasks: [
+			"Implemented site-wide features and fixes using React, HTML, and Modern JavaScript",
+			"Work in a fast paced agile environment closely with developers and clients to meet project requirements, goals, and functionality",
+			"Attend daily stand-up meetings to go over progression on weekly sprints",
+		],
 	},
 	{
 		id: 5,

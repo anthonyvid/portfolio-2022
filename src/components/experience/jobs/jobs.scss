@@ -29,6 +29,10 @@
 			text-transform: uppercase;
 		}
 
+		.tasks {
+			text-transform: none !important;
+		}
+
 		.position,
 		.type {
 			font-size: 15px !important;

@@ -68,9 +68,10 @@ const Job = ({ job }) => {
 				<p className="position">{job.position}</p>
 				<p className="type">{job.type}</p>
 				<div className="tasks">
-					<li>test</li>
-					<li>test</li>
-					<li>test</li>
+					{job.tasks &&
+						job.tasks.map((task, i) => {
+							return <li key={i}>{task}</li>;
+						})}
 				</div>
 			</div>
 			{!job.last && (
