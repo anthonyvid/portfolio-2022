@@ -104,18 +104,21 @@ a:hover {
 
 @media only screen and (max-width: 800px) {
 	.education-header div,
-	.job-header div {
+	.job-header div,
+	.work-term-header div {
 		display: none !important;
 	}
 
 	.education-timeline-mobile,
-	.job-timeline-mobile {
+	.job-timeline-mobile,
+	.work-term-timeline-mobile {
 		display: flex !important;
 		justify-content: space-between;
 	}
 
 	.education-timeline-mobile .location,
-	.job-timeline-mobile .location {
+	.job-timeline-mobile .location,
+	.work-term-timeline-mobile .location {
 		margin-top: 0 !important;
 	}
 }

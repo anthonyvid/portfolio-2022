@@ -168,3 +168,74 @@ export const jobs = [
 		website: "https://www.sera4.com/",
 	},
 ];
+
+export const workterms = [
+	{
+		id: 1,
+		company: "TAMVOES HEALTH Inc.",
+		position: "Frontend Software Developer",
+		fromDate: "May 2022",
+		toDate: "Sep 2022",
+		location: "remote",
+		website: "https://tamvoes.com/main/",
+		type: "4-month | Semester 4",
+		intro: "My summer 2022 co-op work term was at TAMVOES HEALTH Inc. It was my first co-op so I was really looking forward to getting used to the work environment of being a developer and learning as much as possible.",
+		employerInfo: `TAMVOES is a health management platform
+								supporting the information of individuals,
+								families, and their professional team. Founded
+								in 2019, and based in Waterloo Ontario, TAMVOES
+								is a women-led startup with the goal to empower
+								individuals with their health information;
+								giving them the ability to make more informed
+								health care decisions.`,
+		goals: [
+			{
+				id: 1,
+				name: "Technological Literacy",
+				description:
+					"My first goal while working at TAMVOES was to become more familiar with popular frontend technilogies such as React. The way I achieved this was by simply asking to work on more react tasks to learn more about how to use it and what it can do.",
+			},
+			{
+				id: 2,
+				name: "Oral Communication",
+				description:
+					"My second skill was to become better at communicating with my colleagues. Something that helped me get better at this is consistently going to my daily stand-up meetings and engaging in conversations.",
+			},
+			{
+				id: 3,
+				name: "Critical & Creative Thinking",
+				description:
+					"Lastly, I wanted to get better at solving problems and thinking in creative ways. One of the ways I practiced this was to start my solutions on paper and think of the general problem rather then the specifics right away. This allowed me to think more thoroughly and be a better problem solver.",
+			},
+		],
+		jobDescription: `Working with a small and fast pace team like TAMVOES gives you the oppurtunity to learn lots of new skills. As a Frontend Software Developer, my main job was to fix bugs and add features onto the website. TAMVOES works in an agile envirnment, which gave me the ability to work on both larger and small tasks in my sprints.`,
+		technologies: {
+			header: "Some technologies I used:",
+			items: [
+				"HTML",
+				"CSS",
+				"Bootstrap",
+				"React",
+				"JavaScript",
+				"JQuery",
+			],
+		},
+		responsibilities: {
+			header: "Some of my technical responsibilities include:",
+			items: [
+				"Working as an integral member of our fast-paced AGILE software development team",
+				"Tool and technology assessment and selection",
+				"Designing, developing and maintaining product features",
+				"Detecting, reporting, investigating, and fixing defects in test and in production",
+				"Writing efficient code and participating in code reviews",
+				"Test driven development and unit-testing",
+				"Maintaining software documentation",
+			],
+		},
+		focus: "My main focus for this work term was to focus on learning React. One large task I worked on that involved a lot of React was converting pages from legacy code to React.",
+		conclusion:
+			"After finishing my co-op with TAMVOES Health Inc. I have learned lots about what being a developer is in a small and fast paced team. I have also learned many skills that I will be able to use as a developer in the future. Starting September 2022, I will be working as a part-time Frontend Software Developer at TAMVOES Health Inc!",
+		acknowledgments:
+			"Thank you to TAMVOES Health Inc. and all of my coworkers for being welcoming and positive. Thank you to my mentor Andrew D'Agostino for helping me achieve my goals and pursue my career as a developer.",
+	},
+];

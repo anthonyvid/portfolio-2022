@@ -7,8 +7,17 @@
 	}
 }
 
+.desktop-nav .nav-item {
+	border-bottom: 2px solid transparent;
+	transition: 0.1s;
+}
 .desktop-nav .nav-item:hover {
+	transition: 0.1s;
 	border-bottom: 2px solid white;
+}
+
+.active-nav {
+	border-bottom: 2px solid white !important;
 }
 
 .mobile-nav {

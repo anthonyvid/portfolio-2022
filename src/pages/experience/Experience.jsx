@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Jobs from "../../components/experience/jobs/Jobs";
+import WorkTermReports from "../../components/experience/worktermreports/WorkTermReports";
 import Footer from "../../components/footer/Footer";
 
 import { Container } from "react-bootstrap";
@@ -11,6 +12,7 @@ const Experience = () => {
 		<Container fluid style={{ padding: "0", margin: "0" }}>
 			<Header />
 			<Jobs />
+			<WorkTermReports />
 			<Footer />
 		</Container>
 	);

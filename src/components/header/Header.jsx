@@ -1,7 +1,7 @@
 import "./header.css";
 
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
@@ -38,8 +38,32 @@ const Styles = {
 	},
 };
 
+const NAV_ITEMS = {
+	home: "/",
+	experience: "/experience",
+	projects: "/projects",
+};
+
 function Header() {
 	const [activeMenu, setActiveMenu] = useState(false);
+	const [currentPage, setCurrentPage] = useState("/");
+	const pathname = useLocation().pathname;
+
+	useEffect(() => {
+		switch (pathname) {
+			case NAV_ITEMS.home:
+				setCurrentPage(NAV_ITEMS.home);
+				break;
+			case NAV_ITEMS.experience:
+				setCurrentPage(NAV_ITEMS.experience);
+				break;
+			case NAV_ITEMS.projects:
+				setCurrentPage(NAV_ITEMS.projects);
+				break;
+			default:
+				break;
+		}
+	}, [pathname, currentPage]);
 
 	return (
 		<>
@@ -77,25 +101,44 @@ function Header() {
 					>
 						<Row style={Styles.desktopNavbar}>
 							<Col>
-								<Nav.Item>
+								<Nav.Item
+									className={`${
+										currentPage === NAV_ITEMS.home &&
+										"active-nav"
+									}`}
+								>
 									<Link to="/">Home</Link>
 								</Nav.Item>
 							</Col>
 							<Col>
-								<Nav.Item>
+								<Nav.Item
+									className={`${
+										currentPage === NAV_ITEMS.experience &&
+										"active-nav"
+									}`}
+								>
 									<Link to="/experience">Experience</Link>
 								</Nav.Item>
 							</Col>
 							<Col>
-								<Nav.Item>
+								<Nav.Item
+									className={`${
+										currentPage === NAV_ITEMS.projects &&
+										"active-nav"
+									}`}
+								>
 									<Link to="/projects">Projects</Link>
 								</Nav.Item>
 							</Col>
-							<Col>
-								<Nav.Item>
+							{/* <Col>
+								<Nav.Item
+									className={`${
+										activeMenu === "/" && "active-nav"
+									}`}
+								>
 									<Link to="/projects">Projects</Link>
 								</Nav.Item>
-							</Col>
+							</Col> */}
 						</Row>
 					</Nav>
 					<Nav className="d-flex d-lg-none">
