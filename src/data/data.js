@@ -15,14 +15,41 @@ export const skills = [
 	{ id: 1, name: "HTML", icon: AiFillHtml5, color: "A882DD" },
 	{ id: 2, name: "SCSS", icon: FaSass, color: "F08080" },
 	{ id: 3, name: "JavaScript", icon: SiJavascript, color: "93827F" },
-	{ id: 10, name: "Bootstrap", icon: BsFillBootstrapFill, color: "8a12fc" },
-	{ id: 10, name: "MaterialUI", icon: SiMaterialui, color: "016dd9" },
+	{ id: 12, name: "Bootstrap", icon: BsFillBootstrapFill, color: "8a12fc" },
+	{ id: 11, name: "MaterialUI", icon: SiMaterialui, color: "016dd9" },
 	{ id: 5, name: "Node.js", icon: DiNodejs, color: "7D8CC4" },
 	{ id: 6, name: "Express", icon: SiExpress, color: "C3BEF7" },
 	{ id: 7, name: "Python", icon: FaPython, color: "FFC145" },
 	{ id: 8, name: "Java", icon: DiJava, color: "6D9DC5" },
 	{ id: 9, name: "C", icon: GrPersonalComputer, color: "242038" },
 	{ id: 10, name: "MongoDB", icon: SiMongodb, color: "A6D3A0" },
+];
+
+export const educations = [
+	{
+		id: 2,
+		school: "Croatian School",
+		fromDate: "September, 2016",
+		toDate: "May, 2018",
+		location: "Mississauga, ON",
+	},
+	{
+		id: 1,
+		school: "Chirst The King Catholic Secondary School",
+		fromDate: "September, 2016",
+		toDate: "May, 2020",
+		location: "Halton Hills, ON",
+		program: "Technology Specialist High Skills Majors (SHSM)",
+	},
+	{
+		id: 3,
+		school: "University of Guelph",
+		fromDate: "September, 2020",
+		toDate: "May, 2025",
+		location: "Guelph, ON",
+		program: "Software Engineering (CO-OP), Bachelor of Computing",
+		last: true,
+	},
 ];
 
 export const projects = [

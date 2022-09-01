@@ -1,0 +1,34 @@
+.education-content {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	padding: 50px;
+
+	.education {
+		transition: 0.3s ease-in-out;
+		h4 {
+			letter-spacing: 1px;
+		}
+
+		.program,
+		.minor {
+			font-size: 14px;
+			letter-spacing: 1px;
+			color: #5f7080;
+			text-transform: capitalize;
+			margin-top: -10px;
+		}
+
+		.date,
+		.location {
+			font-size: 14px;
+			letter-spacing: 1px;
+			color: #5f7080;
+			text-transform: uppercase;
+		}
+	}
+}

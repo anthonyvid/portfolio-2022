@@ -102,6 +102,21 @@ a:hover {
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.education-header div {
+		display: none !important;
+	}
+
+	.education-timeline-mobile {
+		display: flex !important;
+		justify-content: space-between;
+	}
+
+	.education-timeline-mobile .location {
+		margin-top: 0 !important;
+	}
+}
+
 .form-control:focus {
 	border-color: #5b5ac6 !important;
 	box-shadow: 0 0 0 0.2rem rgba(102, 101, 221, 0.25);

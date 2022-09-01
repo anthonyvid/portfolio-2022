@@ -7,6 +7,7 @@ import About from "../../components/main/about/About";
 import Skills from "../../components/main/skills/Skills";
 import Contact from "../../components/main/contact/Contact";
 import Footer from "../../components/footer/Footer";
+import Education from "../../components/main/education/Education";
 
 const Main = () => {
 	return (
@@ -26,6 +27,13 @@ const Main = () => {
 				animateOnce
 			>
 				<Skills />
+			</AnimationOnScroll>
+			<AnimationOnScroll
+				initiallyVisible={false}
+				animateIn="animate__lightSpeedInLeft"
+				animateOnce
+			>
+				<Education />
 			</AnimationOnScroll>
 			<AnimationOnScroll
 				initiallyVisible={false}

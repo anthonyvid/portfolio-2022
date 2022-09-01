@@ -1,0 +1,31 @@
+.education-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 50px;
+}
+.education-content .education {
+  transition: 0.3s ease-in-out;
+}
+.education-content .education h4 {
+  letter-spacing: 1px;
+}
+.education-content .education .program,
+.education-content .education .minor {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #5f7080;
+  text-transform: capitalize;
+  margin-top: -10px;
+}
+.education-content .education .date,
+.education-content .education .location {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #5f7080;
+  text-transform: uppercase;
+}/*# sourceMappingURL=education.css.map */

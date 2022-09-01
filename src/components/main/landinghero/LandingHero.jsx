@@ -1,6 +1,6 @@
 import "./LandingHero.css";
 
-import Pdf from "../../documents/resume.pdf";
+import Pdf from "../../../documents/resume.pdf";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { Button } from "react-bootstrap";
 
