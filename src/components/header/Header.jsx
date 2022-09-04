@@ -89,8 +89,8 @@ function Header() {
 						}}
 					>
 						<img
-							src="/logoWhite.png"
-							alt="logo"
+							src="/photos/logo.png"
+							alt="..."
 							width={60}
 							height={60}
 						/>
@@ -130,15 +130,15 @@ function Header() {
 									<Link to="/projects">Projects</Link>
 								</Nav.Item>
 							</Col>
-							{/* <Col>
+							<Col>
 								<Nav.Item
 									className={`${
 										activeMenu === "/" && "active-nav"
 									}`}
 								>
-									<Link to="/projects">Projects</Link>
+									<Link to="/#contact">Contact</Link>
 								</Nav.Item>
-							</Col> */}
+							</Col>
 						</Row>
 					</Nav>
 					<Nav className="d-flex d-lg-none">
@@ -192,7 +192,7 @@ const MobileNav = ({ show }) => {
 				<IoGitNetworkSharp size={35} />
 				<span>Projects</span>
 			</Link>
-			<Link style={Styles.mobileNav} to="/contact">
+			<Link style={Styles.mobileNav} to="/#contact">
 				<IoShareSocialSharp size={35} />
 				<span>Contact</span>
 			</Link>

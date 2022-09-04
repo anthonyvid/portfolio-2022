@@ -1,6 +1,7 @@
 import "./contact.css";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -8,12 +9,20 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 function Contact() {
 	const form = useRef();
+	const contactSection = useRef();
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [subject, setSubject] = useState("");
 	const [message, setMessage] = useState("");
 	const [errorMsg, setErrorMsg] = useState("");
 	const [emailSent, setEmailSent] = useState(false);
+
+	const location = useLocation();
+
+	useEffect(() => {
+		if (location.hash === "#contact")
+			contactSection.current.scrollIntoView({ behavior: "smooth" });
+	});
 
 	const isValidEmail = (email) => {
 		return /\S+@\S+\.\S+/.test(email);
@@ -60,7 +69,7 @@ function Contact() {
 	};
 
 	return (
-		<section className="main-section">
+		<section ref={contactSection} className="main-section">
 			<div className="section-header">
 				<div className="d-flex flex-row align-items-center">
 					<small>Say Hi</small>

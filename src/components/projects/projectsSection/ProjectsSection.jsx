@@ -14,7 +14,6 @@ function ProjectsSection() {
 					<small>Check out my</small>
 					<hr
 						style={{
-							width: "auto",
 							width: "45px",
 							marginLeft: "10px",
 							opacity: "1",
@@ -51,7 +50,7 @@ function ProjectsSection() {
 											>
 												<img
 													src={p}
-													alt="project photo slide"
+													alt="project slide"
 													style={{
 														width: "100%",
 														borderRadius: "15px",
@@ -103,16 +102,24 @@ function ProjectsSection() {
 									})}
 								</div>
 								<div className="d-flex" style={{ gap: "10px" }}>
-									<AiFillGithub
-										size={35}
-										className="social-icon"
-										onClick={() => window.open(p.links[0])}
-									/>
-									<BiLinkExternal
-										size={35}
-										className="social-icon"
-										onClick={() => window.open(p.links[1])}
-									/>
+									{p.links[0].length && (
+										<AiFillGithub
+											size={35}
+											className="social-icon"
+											onClick={() =>
+												window.open(p.links[0])
+											}
+										/>
+									)}
+									{p.links[1].length > 0 && (
+										<BiLinkExternal
+											size={35}
+											className="social-icon"
+											onClick={() =>
+												window.open(p.links[1])
+											}
+										/>
+									)}
 								</div>
 							</div>
 						</div>

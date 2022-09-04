@@ -112,7 +112,7 @@ export const projects = [
 			"photos/svgviewer/2.png",
 			"photos/svgviewer/3.png",
 		],
-		links: ["", ""],
+		links: ["https://github.com/anthonyvid/SVG-Viewer-and-Editor", ""],
 	},
 	{
 		id: 2,

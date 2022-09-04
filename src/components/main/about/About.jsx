@@ -22,10 +22,13 @@ const About = () => {
 			</div>
 			<div className="about-content bg-white">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Vero deleniti necessitatibus delectus recusandae enim, in
-					sed accusamus tempore iste. Alias aspernatur perferendis
-					temporibus maxime aperiam dolorum eum quos illum quaerat!
+					I am a 3rd year student studying Software Engineering at the
+					University of Guelph who has been programming for 5 years.
+					Im a very passionate and hard working individual focusing on
+					Frontend developent. Some specifc things I am interested in
+					include entrepreneurship and ui/ux/. Currently I am working
+					as a React Developer co-op at Sera4, and a part-time
+					Frontend Software Developer at TAMVOES Health Inc.
 				</p>
 			</div>
 		</section>
