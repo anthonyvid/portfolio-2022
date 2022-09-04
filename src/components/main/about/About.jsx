@@ -10,7 +10,6 @@ const About = () => {
 					<small>Who am I?</small>
 					<hr
 						style={{
-							width: "auto",
 							width: "70px",
 							marginLeft: "10px",
 							opacity: "1",

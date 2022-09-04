@@ -11,7 +11,6 @@ const Education = () => {
 					<small>learn about my</small>
 					<hr
 						style={{
-							width: "auto",
 							width: "55px",
 							marginLeft: "10px",
 							opacity: "1",

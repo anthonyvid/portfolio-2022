@@ -75,7 +75,6 @@ function Contact() {
 					<small>Say Hi</small>
 					<hr
 						style={{
-							width: "auto",
 							width: "90px",
 							marginLeft: "10px",
 							opacity: "1",

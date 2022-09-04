@@ -12,7 +12,6 @@ const Skills = () => {
 					<h1>Skills</h1>
 					<hr
 						style={{
-							width: "auto",
 							width: "60px",
 							marginLeft: "10px",
 							opacity: "1",

@@ -11,7 +11,6 @@ const Jobs = () => {
 					<small>Check out my</small>
 					<hr
 						style={{
-							width: "auto",
 							width: "70px",
 							marginLeft: "10px",
 							opacity: "1",
@@ -36,7 +35,7 @@ const Job = ({ job }) => {
 			<div className="job d-flex flex-column w-100">
 				<div className="d-flex justify-content-between align-items-center job-header">
 					<h4>
-						<a href={job.website} target="_blank">
+						<a href={job.website} target="_blank" rel="noreferrer">
 							{job.company}
 						</a>
 					</h4>

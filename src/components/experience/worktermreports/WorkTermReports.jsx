@@ -40,7 +40,7 @@ const Term = ({ term }) => {
 			<div className="term d-flex flex-column w-100">
 				<div className="d-flex justify-content-between align-items-center work-term-header">
 					<h4>
-						<a href={term.website} target="_blank">
+						<a href={term.website} target="_blank" rel="noreferrer">
 							{term.company}
 						</a>
 					</h4>
