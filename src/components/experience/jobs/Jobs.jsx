@@ -64,14 +64,37 @@ const Job = ({ job }) => {
 						{job.location}
 					</p>
 				</div>
+				{job?.newRoles &&
+					job.newRoles.map((j, i) => {
+						return (
+							<div key={i}>
+								<div>
+									<p className="position">
+										{j?.role || job?.position}
+									</p>
+									<p className="type">{j.type}</p>
+								</div>
+								<div
+									style={{
+										borderLeft: "2px solid lightgray",
+										width: "100%",
+										height: "45px",
+										marginLeft: "15px",
+										marginTop: "-10px",
+										marginBottom: "5px",
+									}}
+								></div>
+							</div>
+						);
+					})}
 				<p className="position">{job.position}</p>
 				<p className="type">{job.type}</p>
-				<div className="tasks">
+				<ul className="tasks">
 					{job.tasks &&
 						job.tasks.map((task, i) => {
 							return <li key={i}>{task}</li>;
 						})}
-				</div>
+				</ul>
 			</div>
 			{!job.last && (
 				<div

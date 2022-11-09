@@ -216,27 +216,19 @@ export const jobs = [
 	{
 		id: 4,
 		company: "TAMVOES Health Inc.",
-		position: "Frontend Software Developer",
+		position: "Front-end Software Developer",
 		fromDate: "May 2022",
-		toDate: "Sep 2022",
+		toDate: "Current",
 		location: "Waterloo, ON",
 		type: "co-op",
 		website: "https://tamvoes.com/main/",
+		newRoles: [{ type: "Part Time" }],
 		tasks: [
-			"Implemented site-wide features and fixes using React, HTML, and Modern JavaScript",
+			"Improved company's website performance by up to 25% by adding newly optimized features.",
+			"Converted dated HTML code into composable React components decreasing render times by 50%.",
+			"Designed multiple dynamic and browser-compatible pages using HTML5, CSS3, Bootstrap5, and JavaScript (React, Redux).",
 			"Work in a fast paced agile environment closely with developers and clients to meet project requirements, goals, and functionality",
-			"Attend daily stand-up meetings to go over progression on weekly sprints",
 		],
-	},
-	{
-		id: 5,
-		company: "TAMVOES Health Inc.",
-		position: "Frontend Software Developer",
-		fromDate: "Sep 2022",
-		toDate: "Current",
-		location: "Waterloo, ON",
-		type: "part-time",
-		website: "https://tamvoes.com/main/",
 	},
 	{
 		id: 6,
@@ -248,6 +240,12 @@ export const jobs = [
 		type: "co-op",
 		last: true,
 		website: "https://www.sera4.com/",
+		tasks: [
+			"Optimized React components using techniques such as memoization, increasing code efficiency by 20%.",
+			"Designed and implemented features as per user requirements with 100% client satisfaction.",
+			"Produced multiple visual elements of web applications by translating UI/UX design wireframes into code, producing stunning high-quality pages using React and Redux.",
+			"Worked closely with an agile team of 10 members and provided end-to-end solutions for clients, resulting in improved user experience.",
+		],
 	},
 ];
 
@@ -319,5 +317,17 @@ export const workterms = [
 			"After finishing my co-op with TAMVOES Health Inc. I have learned lots about what being a developer is in a small and fast paced team. I have also learned many skills that I will be able to use as a developer in the future. Starting September 2022, I will be working as a part-time Frontend Software Developer at TAMVOES Health Inc!",
 		acknowledgments:
 			"Thank you to TAMVOES Health Inc. and all of my coworkers for being welcoming and positive. Thank you to my mentor Andrew D'Agostino for helping me achieve my goals and pursue my career as a developer.",
+	},
+	{
+		last: true,
+		id: 2,
+		company: "Sera4",
+		position: "React Developer",
+		fromDate: "Sept 2022",
+		toDate: "Dec 2022",
+		location: "remote/Waterloo",
+		website: "https://www.sera4.com/",
+		type: "4-month | Semester 5",
+		intro: "coming soon",
 	},
 ];

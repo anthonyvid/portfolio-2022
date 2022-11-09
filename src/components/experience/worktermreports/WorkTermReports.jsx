@@ -24,9 +24,8 @@ const WorkTermReports = () => {
 				<h1>Work Term Reports</h1>
 			</div>
 			<div className="work-term-content bg-white">
-				{workterms.map((term) => (
-					<Term key={term.id} term={term} />
-				))}
+				{workterms &&
+					workterms.map((term) => <Term key={term.id} term={term} />)}
 			</div>
 		</section>
 	);
@@ -40,12 +39,16 @@ const Term = ({ term }) => {
 			<div className="term d-flex flex-column w-100">
 				<div className="d-flex justify-content-between align-items-center work-term-header">
 					<h4>
-						<a href={term.website} target="_blank" rel="noreferrer">
-							{term.company}
+						<a
+							href={term?.website}
+							target="_blank"
+							rel="noreferrer"
+						>
+							{term?.company}
 						</a>
 					</h4>
 					<div>
-						<p className="date">{`${term.fromDate} - ${term.toDate}`}</p>
+						<p className="date">{`${term?.fromDate} - ${term?.toDate}`}</p>
 						<p
 							className="location"
 							style={{
@@ -53,12 +56,12 @@ const Term = ({ term }) => {
 								marginTop: "-17px",
 							}}
 						>
-							{term.location}
+							{term?.location}
 						</p>
 					</div>
 				</div>
 				<div className="work-term-timeline-mobile d-none">
-					<p className="date">{`${term.fromDate} - ${term.toDate}`}</p>
+					<p className="date">{`${term?.fromDate} - ${term?.toDate}`}</p>
 					<p
 						className="location"
 						style={{
@@ -66,11 +69,11 @@ const Term = ({ term }) => {
 							marginTop: "-17px",
 						}}
 					>
-						{term.location}
+						{term?.location}
 					</p>
 				</div>
-				<p className="position">{term.position}</p>
-				<p className="type">{term.type}</p>
+				<p className="position">{term?.position}</p>
+				<p className="type">{term?.type}</p>
 				<Button
 					onClick={() => setOpen(!open)}
 					aria-controls="term-info-aria"
@@ -89,80 +92,84 @@ const Term = ({ term }) => {
 					<div id="term-info-aria" className="term-info mt-5">
 						<div>
 							<p className="term-heading">Introduction</p>
-							<p>{term.intro}</p>
+							<p>{term?.intro}</p>
 						</div>
 						<div>
 							<p className="term-heading">Employer Information</p>
-							<p>{term.employerInfo}</p>
+							<p>{term?.employerInfo}</p>
 						</div>
 						<div>
 							<p className="term-heading">Goals of the term</p>
 							<div>
-								{term.goals.map((goal) => {
-									return (
-										<div key={goal.id} className="mb-4">
-											<p
-												className="text-uppercase"
-												style={{ marginBottom: "3px" }}
-											>
-												{goal.name}
-											</p>
-											<li>{goal.description}</li>
-										</div>
-									);
-								})}
+								{term?.goals &&
+									term?.goals.map((goal) => {
+										return (
+											<div key={goal.id} className="mb-4">
+												<p
+													className="text-uppercase"
+													style={{
+														marginBottom: "3px",
+													}}
+												>
+													{goal?.name}
+												</p>
+												<li>{goal?.description}</li>
+											</div>
+										);
+									})}
 							</div>
 						</div>
 						<div>
 							<p className="term-heading">Job Descripition</p>
-							<p>{term.jobDescription}</p>
+							<p>{term?.jobDescription}</p>
 							<div className="mb-4">
 								<p
 									className="text-uppercase"
 									style={{ marginBottom: "3px" }}
 								>
-									{term.technologies.header}
+									{term?.technologies?.header}
 								</p>
-								{term.technologies.items.map((item, i) => {
-									return <li key={i}>{item}</li>;
-								})}
+								{term?.technologies?.items &&
+									term?.technologies?.items.map((item, i) => {
+										return <li key={i}>{item}</li>;
+									})}
 							</div>
 							<div className="mb-4">
 								<p
 									className="text-uppercase"
 									style={{ marginBottom: "3px" }}
 								>
-									{term.responsibilities.header}
+									{term?.responsibilities?.header}
 								</p>
-								{term.responsibilities.items.map((item, i) => {
-									return <li key={i}>{item}</li>;
-								})}
+								{term?.responsibilities?.items &&
+									term?.responsibilities?.items.map(
+										(item, i) => {
+											return <li key={i}>{item}</li>;
+										}
+									)}
 							</div>
 						</div>
 						<div>
 							<p className="term-heading">Work Term Focus</p>
-							<p>{term.focus}</p>
+							<p>{term?.focus}</p>
 						</div>
 						<div>
 							<p className="term-heading">Conclusion</p>
-							<p>{term.conclusion}</p>
+							<p>{term?.conclusion}</p>
 						</div>
 						<div>
 							<p className="term-heading">Acknowledgments</p>
-							<p>{term.acknowledgments}</p>
+							<p>{term?.acknowledgments}</p>
 						</div>
 					</div>
 				</Collapse>
 			</div>
-			{/* Add this in below once i have > 1 workterm */}
-			{/* {!term.last && (
-								<div
-									className="d-flex align-items-center my-4 w-100"
-									style={{
-										borderTop: "1px solid lightgray",
-									}}
-								></div>
-							)} */}
+			{!term.last && (
+				<div
+					className="d-flex align-items-center my-4 w-100"
+					style={{ borderTop: "1px solid lightgray" }}
+				></div>
+			)}
 		</>
 	);
 };

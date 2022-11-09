@@ -3,9 +3,9 @@ import "../../src/app.css";
 import React, { lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-const Main = lazy(() => import("../pages/main/Main"));
-const Experience = lazy(() => import("../pages/experience/Experience"));
-const Projects = lazy(() => import("../pages/projects/Projects"));
+import Main from "../pages/main/Main";
+import Experience from "../pages/experience/Experience";
+import Projects from "../pages/projects/Projects";
 
 const siteRoutes = [
 	{ component: <Main />, path: "/" },
