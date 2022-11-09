@@ -1,6 +1,6 @@
 import "../../src/app.css";
 
-import React, { lazy } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Main from "../pages/main/Main";
