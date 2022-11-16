@@ -76,8 +76,19 @@ const Content = () => {
 				</h3>
 				<div className="d-flex justify-content-between">
 					<span>
-						<AiFillLinkedin size={45} className="social-icon" />
+						<AiFillLinkedin
+							onClick={() =>
+								window.open(
+									"https://www.linkedin.com/in/anthonyvidovic/"
+								)
+							}
+							size={45}
+							className="social-icon"
+						/>
 						<AiFillGithub
+							onClick={() =>
+								window.open("https://github.com/anthonyvid")
+							}
 							className="social-icon"
 							style={{ marginLeft: "10px" }}
 							size={45}
