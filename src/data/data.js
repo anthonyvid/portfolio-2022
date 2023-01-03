@@ -218,7 +218,7 @@ export const jobs = [
 		company: "TAMVOES Health Inc.",
 		position: "Front-end Software Developer",
 		fromDate: "May 2022",
-		toDate: "Current",
+		toDate: "Dec 2022",
 		location: "Waterloo, ON",
 		type: "co-op",
 		website: "https://tamvoes.com/main/",
@@ -235,7 +235,7 @@ export const jobs = [
 		company: "Sera4",
 		position: "React Software Developer",
 		fromDate: "Sep 2022",
-		toDate: "Current",
+		toDate: "Dec 2022",
 		location: "Waterloo, ON",
 		type: "co-op",
 		last: true,
@@ -328,6 +328,47 @@ export const workterms = [
 		location: "remote/Waterloo",
 		website: "https://www.sera4.com/",
 		type: "4-month | Semester 5",
-		intro: "coming soon",
+		intro: "My Fall 2022 co-op work term was at Sera4. It was my second co-op so I was looking to gain some more intermediate experience as a software developer.",
+		employerInfo: `Sera4 is a Canadian technology company who holds core patents for keyless physical access. With its state-of-art cloud technology, Sera4 brings increased security and efficiency to access management of Critical Infrastructure. Sera4’s head office is based in Waterloo, Ontario, home to a strong technology sector with hundreds of high-tech firms.`,
+		goals: [
+			{
+				id: 1,
+				name: "Technological Literacy",
+				description:
+					"My first goal while working at Sera4 was to become an intermediate React developer. The way I achieved this was by working with my supervisor on advanced topics in React. One thing I can take away from this is the concept of Memoization!",
+			},
+			{
+				id: 2,
+				name: "Oral Communication",
+				description:
+					"My second skill was to become better at communicating with my colleagues. Something that helped me get better at this is consistently going to my daily stand-up meetings and engaging in conversations.",
+			},
+			{
+				id: 3,
+				name: "Critical & Creative Thinking",
+				description:
+					"Lastly, I wanted to get better at solving problems and thinking in creative ways. One of the ways I practiced this was to start my solutions on paper and think of the general problem rather then the specifics right away. This allowed me to think more thoroughly and be a better problem solver.",
+			},
+		],
+		jobDescription: `As a React Developer at Sera4, my main task was to help lead their next generation UI efforts with React to design, implement and test new React components, expose capabilities from new APIs and ensure that web applications are as secure as possible.`,
+		technologies: {
+			header: "Some technologies I used:",
+			items: ["React", "MaterialUI", "JavaScript", "Postman"],
+		},
+		responsibilities: {
+			header: "Some of my technical responsibilities include:",
+			items: [
+				"Developing key product features and enhancements within a single unified roadmap",
+				"Ensuring deliverables happen on time and per requirements",
+				"Develop automated unit tests and integration tests to ensure the product features are working",
+				"Responding to user experience feedback and make necessary changes and iterative improvements",
+				"Writing efficient code and participating in code reviews",
+			],
+		},
+		focus: "My main focus for this work term was educating myself on intermediate React concepts. One intermediate React concept I worked on was memoization. I increased a single components efficiency by 20%.",
+		conclusion:
+			"After finishing my co-op with Sera4. I have learned lots about being an intermediate React developer, which helped in understanding my future as a software developer.",
+		acknowledgments:
+			"Thank you to Sera4 and all of my coworkers for being welcoming and positive. Thank you to my mentor Jeff for helping me achieve my goals and pursue my career as a developer.",
 	},
 ];
