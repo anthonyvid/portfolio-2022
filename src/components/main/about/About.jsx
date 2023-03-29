@@ -21,13 +21,16 @@ const About = () => {
 			</div>
 			<div className="about-content bg-white">
 				<p>
-					I am a 3rd year student studying Software Engineering at the
-					University of Guelph who has been programming for 5 years.
-					Im a very passionate and hard working individual focusing on
-					Frontend developent. Some specifc things I am interested in
-					include entrepreneurship and ui/ux/. Currently I am working
-					as a React Developer co-op at Sera4, and a part-time
-					Frontend Software Developer at TAMVOES Health Inc.
+					Hello there! My name is Anthony and I am a 3rd year software
+					engineering student at the University of Guelph. I have a
+					passion for creating intuitive and engaging user experiences
+					through frontend development. While I specialize in frontend
+					development, I also have a strong foundation in backend
+					programming. My goal is to combine my technical skills with
+					my creativity to build impactful and visually stunning
+					projects. When I'm not coding, I enjoy playing soccer
+					and exploring new technologies. Thank you for visiting my
+					personal website and I hope you enjoy my work!
 				</p>
 			</div>
 		</section>
