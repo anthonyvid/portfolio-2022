@@ -10,7 +10,7 @@ const LandingHero = () => {
 			<div className="hero">
 				<div className="avatar">
 					<img
-						src="/photos/avatar.png"
+						src="/photos/avatar.jpg"
 						alt=""
 						style={{ borderRadius: "50%" }}
 						width="300"
@@ -29,7 +29,7 @@ const Content = () => {
 			<div className="wrapper">
 				<div className="mobile-avatar">
 					<img
-						src="/photos/avatar.png"
+						src="/photos/avatar.jpg"
 						alt=""
 						style={{ borderRadius: "50%" }}
 						width="300"
