@@ -21,7 +21,7 @@ const About = () => {
 			</div>
 			<div className="about-content bg-white">
 				<p>
-					Hello there! My name is Anthony and I am a 3rd year software
+					Hello there! My name is Anthony and I am a software
 					engineering student at the University of Guelph. I have a
 					passion for creating intuitive and engaging user experiences
 					through frontend development. While I specialize in frontend
