@@ -399,27 +399,27 @@ export const workterms = [
       {
         id: 1,
         name: "Technological Literacy - Becoming an outstanding React developer",
-        description: `For each of my goals I used a method that inolves having a high level goal, then smaller subtasks/goals that I knew if I completed would mean I have achieved my goal.\n For this goal I have divided it into these smaller goals: `,
+        description: `For each of my goals I used a method that inolves creating high-level goal, accompanied by a series of smaller, manageable goals. Once I complete all of the smaller goals then I would have successfully reached my high-level goal.`,
         descriptionPoints: [
           "I'm familiar with the structure of the codebase",
-          "I am able comfortable reviewing larger PRs and providing useful feedback",
-          "I completed 70 PRs in P&C",
+          "I am able comfortable doing large code reviews and providing useful feedback",
+          "I completed 70 pull requests",
           "I have added a major feature to Hootsuite that real users use",
         ],
       },
       {
         id: 2,
         name: "Oral Communication",
-        description: "I will be better at communication",
+        description: "I will become a better communicator at work",
         descriptionPoints: [
-          "How often am I engaging and participating with people apart of my team and in the whole company",
-          "I am able to communicate about topics the team talks about on a day-to-day basis",
+          "I actively engage in conversation with team members",
+          "I am able to communicate about topics my team talks about on a day-to-day basis",
         ],
       },
       {
         id: 3,
         name: "Technological Literacy",
-        description: "Complete first 3 phases of FE SLO Monitoring & Alerting",
+        description: "Complete first 3 phases of FE SLO Monitoring & Alerting project",
         descriptionPoints: [
           "Adopt FID, LCS, CLS libraries",
           "Define V1 SLOs based on these metrics",
@@ -427,7 +427,7 @@ export const workterms = [
         ],
       },
     ],
-    jobDescription: `As a Software Developer at Hootsuite, I primarily worked as front-end development on team Ferrix! I contributed to many different projects and help with fixing bugs and polishing up parts of the UI. One main thing I worked on was adopting performance metrics such as FID, LCP, and CLS.`,
+    jobDescription: `As a Software Developer at Hootsuite, I primarily worked as front-end development on team Ferrix! I contributed to many different projects and helped with fixing bugs and polishing up parts of the UI. One main thing I worked on was adopting performance metrics such as FID, LCP, and CLS.`,
     technologies: {
       header: "Some technologies I used:",
       items: ["React", "JavaScript", "Jest", "Playwright"],
@@ -435,7 +435,7 @@ export const workterms = [
     focus:
       "My main focus for this work term was to learn more about the workings of a large scale software company. This experience marked a significant point in my career compared to my previous co-ops at much smaller companies, exposing me to an entirely new and dynamic environment.",
     conclusion:
-      "After finishing my co-op with Hootsuite. Throughout this journey, I have gained valuable insights into the processes and strategies that drive the success of such expansive enterprises.",
+      "After finishing my co-op with Hootsuite, I have gained valuable insights into the processes and strategies that drive the success of such expansive enterprises. I have also learned a lot more about front-end development and increased my skills as a React developer.",
     acknowledgments:
       "Thank you to Hootsuite and team Ferrix for being welcoming and positive. Thank you to my manager Brandon and onboarding buddy Luke for helping me achieve my goals and pursue my career as a developer.",
   },
