@@ -1,11 +1,6 @@
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaSass, FaReact, FaPython } from "react-icons/fa";
-import {
-  SiJavascript,
-  SiMongodb,
-  SiExpress,
-  SiMaterialui,
-} from "react-icons/si";
+import { SiJavascript, SiMongodb, SiExpress } from "react-icons/si";
 import { DiNodejs, DiJava } from "react-icons/di";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { GrPersonalComputer } from "react-icons/gr";
@@ -16,7 +11,7 @@ export const skills = [
   { id: 2, name: "SCSS", icon: FaSass, color: "F08080" },
   { id: 3, name: "JavaScript", icon: SiJavascript, color: "93827F" },
   { id: 12, name: "Bootstrap", icon: BsFillBootstrapFill, color: "8a12fc" },
-  { id: 11, name: "MaterialUI", icon: SiMaterialui, color: "016dd9" },
+  { id: 11, name: "MaterialUI", icon: SiJavascript, color: "016dd9" },
   { id: 5, name: "Node.js", icon: DiNodejs, color: "7D8CC4" },
   { id: 6, name: "Express", icon: SiExpress, color: "C3BEF7" },
   { id: 7, name: "Python", icon: FaPython, color: "FFC145" },
@@ -254,13 +249,24 @@ export const jobs = [
     toDate: "Dec 2023",
     location: "Vancouver, BC",
     type: "co-op",
-    last: true,
     website: "https://www.hootsuite.com/",
     tasks: [
       "Supported the development of a powerful social media management tool, serving 750+ Fortune 1000 companies to effectively engage with customers and drive business growth.",
       "Integrated key performance metrics such as FID, LCP, and CLS through user-friendly dashboards, enabling data- driven optimizations resulting in faster page load times, a smoother user experience, and heightened user engagement.",
       "Utilized Playwright for robust end-to-end testing, optimizing functionality and cross-browser compatibility.",
     ],
+  },
+  {
+    id: 6,
+    company: "Descartes",
+    position: "Software Developer",
+    fromDate: "Jan 2024",
+    toDate: "Current",
+    location: "Waterloo, ON",
+    type: "co-op",
+    last: true,
+    website: "https://www.descartes.com/home",
+    tasks: [],
   },
 ];
 
@@ -383,7 +389,6 @@ export const workterms = [
       "Thank you to Sera4 and all of my coworkers for being welcoming and positive. Thank you to my mentor Jeff for helping me achieve my goals and pursue my career as a developer.",
   },
   {
-    last: true,
     id: 3,
     company: "Hootsuite",
     position: "Software Developer",
@@ -419,7 +424,8 @@ export const workterms = [
       {
         id: 3,
         name: "Technological Literacy",
-        description: "Complete first 3 phases of FE SLO Monitoring & Alerting project",
+        description:
+          "Complete first 3 phases of FE SLO Monitoring & Alerting project",
         descriptionPoints: [
           "Adopt FID, LCS, CLS libraries",
           "Define V1 SLOs based on these metrics",
@@ -438,5 +444,58 @@ export const workterms = [
       "After finishing my co-op with Hootsuite, I have gained valuable insights into the processes and strategies that drive the success of such expansive enterprises. I have also learned a lot more about front-end development and increased my skills as a React developer.",
     acknowledgments:
       "Thank you to Hootsuite and team Ferrix for being welcoming and positive. Thank you to my manager Brandon and onboarding buddy Luke for helping me achieve my goals and pursue my career as a developer.",
+  },
+  {
+    last: true,
+    id: 4,
+    company: "Descartes",
+    position: "Software Developer",
+    fromDate: "Jan 2024",
+    toDate: "April 2024",
+    location: "remote/Waterloo",
+    website: "https://www.descartes.com/home",
+    type: "4-month | Semester 8",
+    intro:
+      "My fourth co-op placement was at Descartes. In this report, I’ll dive into my experiences as a Software Developer during the four-month co-op period.",
+    employerInfo: `Descartes is a Global Leader in Uniting Businesses in Commerce by Providing Cloud-based Logistics and Supply Chain Solutions.`,
+    goals: [
+      {
+        id: 1,
+        name: "Personal Learning Goal - Becoming a better TypeScript Developer",
+        description: `To achieve each of my goals, I used the OKR-Lite method. This approach involves setting a clear primary goal and breaking it down into smaller, achievable milestones. By completing all these milestones, I successfully reach my overall objective.`,
+        descriptionPoints: [
+          "I am coding in TypeScript instead of JavaScript for all of my work at Descartes.",
+          "I have learnt about generic types in TypeScript and implemented it in several areas of the Descartes codebase.",
+        ],
+      },
+      {
+        id: 2,
+        name: "Technology Literacy",
+        description:
+          "Have a deep understanding of the Descartes codebase, as well as OneFace.",
+        descriptionPoints: [
+          "I now have a deep understanding of the codebase, and can participate in discussion about this.",
+        ],
+      },
+      {
+        id: 3,
+        name: "Technological Literacy",
+        description: "Create OneFace React Framework",
+        descriptionPoints: [
+          "I have built out the OneFace React Framework for Descartes, and am continuing to do so.",
+        ],
+      },
+    ],
+    jobDescription: `In my role as a Software Developer at Descartes, I was part of the OneFace team. My primary responsibility involved creating the React framework for OneFace from the ground up. Additionally, I actively promoted the adoption of OneFace React by other teams.`,
+    technologies: {
+      header: "Some technologies I used:",
+      items: ["React", "JavaScript", "TypeScript", "Jest", "Playwright"],
+    },
+    focus:
+      "During this work term, my primary focus was to assume greater responsibility and take initiative as a developer. Over the course of these four months, I’ve gained a wealth of knowledge—perhaps even more than all my previous co-op experiences combined. Specifically, I’ve acquired the skills to create a large-scale component library and efficiently distribute it.",
+    conclusion:
+      "As I reflect on my four months at Descartes, I am immensely satisfied with the experience. I am thrilled to share that my co-op has been extended for another four months, and I eagerly look forward to the exciting opportunities ahead.",
+    acknowledgments:
+      "Thank you to Descartes and the OneFace team for their warm welcome and positive atmosphere. As I look ahead, I am eagerly anticipating the next four months of exciting opportunities and growth.",
   },
 ];
