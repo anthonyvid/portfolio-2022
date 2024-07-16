@@ -446,7 +446,6 @@ export const workterms = [
       "Thank you to Hootsuite and team Ferrix for being welcoming and positive. Thank you to my manager Brandon and onboarding buddy Luke for helping me achieve my goals and pursue my career as a developer.",
   },
   {
-    last: true,
     id: 4,
     company: "Descartes",
     position: "Software Developer",
@@ -497,5 +496,58 @@ export const workterms = [
       "As I reflect on my four months at Descartes, I am immensely satisfied with the experience. I am thrilled to share that my co-op has been extended for another four months, and I eagerly look forward to the exciting opportunities ahead.",
     acknowledgments:
       "Thank you to Descartes and the OneFace team for their warm welcome and positive atmosphere. As I look ahead, I am eagerly anticipating the next four months of exciting opportunities and growth.",
+  },
+  {
+    id: 5,
+    last: true,
+    company: "Descartes",
+    position: "Software Developer",
+    fromDate: "May 2024",
+    toDate: "August 2024",
+    location: "remote/Waterloo",
+    website: "https://www.descartes.com/home",
+    type: "4-month",
+    intro:
+      "I am lucky enough to have returned to Descartes for my 5th and final co-op placement. In this report, I’ll dive into the continuation of my experiences as a Software Developer during the four-month co-op period.",
+    employerInfo: `Descartes is a Global Leader in Uniting Businesses in Commerce by Providing Cloud-based Logistics and Supply Chain Solutions.`,
+    goals: [
+      {
+        id: 1,
+        name: "Personal Learning Goal - Becoming a better TypeScript Developer",
+        description: `To achieve each of my goals, I used the OKR-Lite method. This approach involves setting a clear primary goal and breaking it down into smaller, achievable milestones. By completing all these milestones, I successfully reach my overall objective.`,
+        descriptionPoints: [
+          "I am coding in TypeScript instead of JavaScript for all of my work at Descartes.",
+          "I have learnt about generic types in TypeScript and implemented it in several areas of the Descartes codebase.",
+        ],
+      },
+      {
+        id: 2,
+        name: "Technology Literacy",
+        description:
+          "Have a deep understanding of the Descartes codebase, as well as OneFace.",
+        descriptionPoints: [
+          "I now have a deep understanding of the codebase, and can participate in discussion about this.",
+        ],
+      },
+      {
+        id: 3,
+        name: "Technological Literacy",
+        description: "Create OneFace React Framework",
+        descriptionPoints: [
+          "I have built out the OneFace React Framework for Descartes, and am continuing to do so.",
+        ],
+      },
+    ],
+    jobDescription: `In my role as a Software Developer at Descartes, I was part of the OneFace team. My primary responsibility involved creating the React framework for OneFace from the ground up. Additionally, I actively promoted the adoption of OneFace React by other teams.`,
+    technologies: {
+      header: "Some technologies I used:",
+      items: ["React", "JavaScript", "TypeScript", "Jest", "Playwright"],
+    },
+    focus:
+      "During my second co-op term at Descartes, I concentrated on advancing the OneFace React framework to a more sophisticated level. I integrated unit tests and end-to-end tests within a pipeline, and created comprehensive Storybook documentation for all the React components I developed. Additionally, I successfully onboarded several teams to use my React library and have been providing ongoing support for them.",
+    conclusion:
+      "As I reflect on my four months at Descartes, I am immensely satisfied with the experience and invaluable knowledge I have gained.",
+    acknowledgments:
+      "Thank you to Descartes and the OneFace team for their warm welcome and positive atmosphere.",
   },
 ];
